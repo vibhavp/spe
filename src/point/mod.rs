@@ -45,6 +45,10 @@ impl Point {
         self.grav_accel = self.grav_accel + u*(GRAV_CONST * (point.mass/dist.powi(2)));
         //println!("dist: {} grav: {}", dist, self.grav_accel);
     }
+
+    pub fn current_position(self) -> Vector {
+        self.cur_pos.clone()
+    }
 }
 
 impl Clone for Point {

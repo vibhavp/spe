@@ -4,6 +4,4 @@ version = "0.1.0"
 authors = ["Vibhav Pant <vibhavp@gmail.com>"]
 
 [dependencies]
-rand = "*"
-[dependencies.kiss3d]
-git = "https://github.com/sebcrozet/kiss3d"
+sfml = "0.11.0"
