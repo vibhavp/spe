@@ -6,10 +6,10 @@ const GRAV_CONST: f64 = 0.00000000006674;
 
 pub struct Point {
     mass: f64,
-    cur_pos: Vector,
-    prev_pos: Vector,
-    accel: Vector,
-    pub grav_accel: Vector,
+    pub cur_pos: Vector,
+    pub prev_pos: Vector,
+    pub accel: Vector,
+    grav_accel: Vector,
 }
 
 impl Point {
@@ -22,7 +22,7 @@ impl Point {
             grav_accel: Vector::default(),
         }
     }
-    
+
     pub fn update_verlet(&mut self, step: f64) {
         let temp = self.cur_pos;
         let total_accel = self.accel + self.grav_accel;

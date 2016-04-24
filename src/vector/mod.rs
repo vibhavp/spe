@@ -76,11 +76,14 @@ impl Vector {
     pub fn norm(self) -> f64 {
         (self.x*self.x+self.y*self.y).sqrt()
     }
+
+    pub fn normalized(self) -> Vector {
+         self/self.norm()
+    }
 }
 
 pub fn unit(v1: Vector, v2: Vector) -> Vector {
-    let diff = v1 - v2;
-    diff/diff.norm()
+    (v1 - v2).normalized()
 }
 
 impl fmt::Display for Vector{
