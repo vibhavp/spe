@@ -1,0 +1,3 @@
+[submodule "src/rugra"]
+	path = src/rugra
+	url = https://github.com/ticki/rugra.git
