@@ -6,5 +6,7 @@ mod tests {
 }
 
 pub mod point;
+pub mod body;
 pub mod vector;
 pub mod space;
+pub mod graphics;
